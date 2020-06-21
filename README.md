@@ -2,9 +2,8 @@
 it contains all the assignments for the Devops
 
 
-
-#Installed jenkins on AWS ec2 server.
-#While running and building a app, had an error. 
+Installed jenkins on AWS ec2 server.
+While running and building a app, had an error. 
 !!!!!!!!!!Make sure to use the same pem key for all 4 instances; 
 its gets easier to create the slave nodes later on jenkins.
 otherwise you will need 4 differnt authenticationkey verification.
@@ -26,7 +25,8 @@ Jenkins Master:
 		 copy the .tar file from local to your instance.
 		 for windows user to copy file from local to ec2:
 			//copy files from local to ec2
- scp -i C:\Users\location\to\keyfile.pem C:\Users\location\to\jdk-8u251-linux-x64.tar.gz ec2-user@ip#:/tmp
+ $scp -i C:\Users\location\to\keyfile.pem C:\Users\location\to\jdk-8u251-linux-x64.tar.gz ec2-user@ip#:/tmp
+ 
 ----------------------------step:3----------------------------------------
 	3. Log into ec2-user:
 		> use root: sudo -i
